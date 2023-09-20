@@ -1,9 +1,14 @@
 name: learn-github-actions
-run-name: ${{ github.actor }}Hello Testbash
+run-name: ${{ github.actor }}Run unittest
 on: [push]
 jobs:
   Testbash:
     runs-on: ubuntu-latest
     steps:
+      - run: ...
+      - run: cd src/webapp
+      - run: npm install
+      - run: npm run start-server
+      - run: cd api
       - run: npm install
       - run: npm run test
