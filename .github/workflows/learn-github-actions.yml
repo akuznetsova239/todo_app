@@ -3,6 +3,6 @@ run-name: ${{ github.actor }}Hello Testbash
 on: [push]
 jobs:
   Testbash:
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - run: echo "Hello Testbash"
