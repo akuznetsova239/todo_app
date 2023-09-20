@@ -1,0 +1,8 @@
+name: learn-github-actions
+run-name: ${{ github.actor }}Hello Testbash
+on: [push]
+jobs:
+  name: Testbash
+  check-bats-version:
+    steps:
+      - run: echo "Hello Testbash"
