@@ -10,6 +10,7 @@ jobs:
         with:
           node-version: '18'
       - run: cd src/webapp
+      - run: pwd
       - run: npm install
       - run: npm run start-server
       - run: cd api
